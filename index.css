@@ -1,0 +1,129 @@
+.container{
+display: flex;
+flex-direction: row;
+align-content: space-around;
+
+}
+.dummy1{
+  display: inline-block;
+  margin-top: 100px;
+}
+.dummy3{
+  display: none;
+}
+.item{
+font-family: 'Courier New';
+font-size: 60px;
+ margin-left: 120px;
+ font-size: 50px;
+
+}
+.item2{
+ margin-left:400px ;
+ font-family: 'Courier New';
+font-size: 30px;}
+
+.box{
+ margin: 50px;
+  height:350px;
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 8px 6px 10px gray;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+.box1{
+    border: 3px solid red;  
+    
+}
+.box2{
+  border: 3px solid red;
+  
+}
+.box3{
+  border: 3px solid red;
+}
+.button{
+  color: red;
+  font-size:35px;
+ 
+}
+.font1{
+  font-size: 30px;
+ font-family: 'Courier New';
+  color: red;
+}
+.font2{
+  font-weight: bold;
+  color: red;
+  text-decoration: line-through;
+}
+hr{
+  width: 150px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width:480px) and (min-width:320px){
+  .dummy{
+    display: none;
+  }
+ 
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+    }
+    .item{
+      font-family: 'Courier New';
+      font-size: 60px;
+       margin-left: 10px;
+       font-size: 50px;
+      
+      }
+      .item2{
+      
+       font-family: 'Courier New';
+      font-size: 30px;}
+    
+    .box{
+    
+      height:100px;
+      width: 400px;
+      border-radius: 20px;
+      box-shadow: 8px 6px 10px gray;
+      text-align: center;
+      padding-top: 20px;
+      
+    }
+    .box1{
+      
+        border: 3px solid rgb(209, 203, 203);  
+        
+    }
+    .box2{
+      border: 3px solid rgb(209, 206, 206);
+      
+    }
+    .box3{
+      border: 3px solid rgb(202, 198, 198);
+    }
+    .dummy3{
+     display: flex;
+     flex-direction: column;
+     margin-top: 10px;
+    }
+    
+     .font1{
+      font-size: 30px;
+     font-family: 'Courier New';
+      color: rgb(182, 169, 169);
+    }
+    
+    hr{
+      width: 150px;
+      margin-right: 10px;
+    } 
+    
+}
