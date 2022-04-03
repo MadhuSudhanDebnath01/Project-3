@@ -1,211 +1,176 @@
-.box-container{
-  border: 2px solid white;
+.jio-container{
+  display:grid;
+  align-items:flex-end;
+  justify-content: center;
+  
+} 
+ .box20{
+  height:200px;
+  width: 300px;
+  margin-top: 30vh;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 20px;
+  box-shadow: 8px 6px 10px gray;
+ text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  color: red;
+ }
+ .button2{
+  background-color: red;
+  color: white;
+  border-radius: 25px;
+ height: 40px;
+  width: 80px;
+  border: 3px solid red;
+}
+.main-container{
+  border: 1px;
   position: absolute;
   filter: blur(5px);
   visibility: none;
   z-index: -1;
 }
+.item-container{
+  display: grid;
+  grid-template-columns: auto auto;
+ padding: 80px;
+ gap: 500px;
+ justify-content:center;
+ 
+}
+.item{
+font-family: 'Courier New';
+font-size: 60px;
+}
+.box-container{
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.dummy{
+  display: none;
+}
+.dummy1{
+  display:0;
+}
 
-.container{
-    display: flex;
-    flex-direction:row;
-    align-content: space-around;
-    
-    }
-    .dummy1{
-      display: inline-block;
-      margin-top: 100px;
-    }
-   
-    .item{
-    font-family: 'Courier New';
-    font-size: 60px;
-     margin-left: 120px;
-     font-size: 50px;
-    
-    }
-    .item2{
-     margin-left:400px ;
-     font-family: 'Courier New';
-    font-size: 30px;}
-    
-    .box{
-     margin: 50px;
-      height:350px;
-      width: 250px;
-      border-radius: 20px;
-      box-shadow: 8px 6px 10px gray;
-      text-align: center;
-      padding-top: 20px;
-      
-    }
-    .box1{
-        border: 3px solid red;  
-        
-    }
-    .box2{
-      border: 3px solid red;
-      
-    }
-    .box3{
-      border: 3px solid red;
-    }
-    .button{
-      color: red;
-      font-size:35px;
-     
-    }
-    .font1{
-      font-size: 30px;
-     font-family: 'Courier New';
-      color: red;
-    }
-    .font2{
-      font-weight: bold;
-      color: red;
-      text-decoration: line-through;
-    }
-    hr{
-      width: 150px;
-      margin-right: 10px;
-    }
-.container2{
-    position: absolute;
-    height: 100%;
-    width: 1220px;
-    z-index:1;
+.box{
+height: 350px;
+width: 250px;
+border: 3px solid red;
+border-radius: 20px;
+box-shadow: 8px 6px 10px gray;
+padding-top: 20px;
+margin: 50px;
+text-align: center;
 }
-.box20{
-  position:relative;
-  display: inline-block;
-  margin: 80px;
-  height:200px;
-  width: 300px;
-  align-content: space-between;
-  background-color: white;
-}
-.box21{
-   border: 2px solid red;
-    border-radius: 20px;
-    box-shadow: 8px 6px 10px gray;
-    text-align: center;
-    font-size: 30px;
-  padding-top: 20px;
-  margin-left: 500px;
+.button{
+  color: red;
+  font-size:35px;
+ 
+}.font1{
+  font-size: 30px;
+ font-family: 'Courier New';
   color: red;
 }
-.button2{
-    background-color: red;
-    color: white;
-    border-radius: 25px;
-   height: 40px;
-    width: 80px;
-    border: 3px solid white;
+
+.font2{
+  font-weight: bold;
+  color: red;
+  text-decoration: line-through;
 }
-@media only screen and (max-width:480px) and (min-width:320px){
-  .dummy{
-    display: none;
-  }
-  .box-container{
-    border: 2px solid white;
-    position: absolute;
-    filter: blur(3px);
-    visibility: none;
-    z-index: -1;
-  }
-  
-  .container{
-      display: flex;
-      flex-direction:row;
-      align-content: space-around;
-      
-      }
-      .dummy1{
-        display: inline-block;
-        margin-top: 100px;
-      }
-     
-      .item{
-      font-family: 'Courier New';
-      font-size: 60px;
-       margin-left: 120px;
-       font-size: 50px;
-      
-      }
-      .item2{
-       margin-left:400px ;
-       font-family: 'Courier New';
-      font-size: 30px;}
-      
-      .box{
-       margin: 50px;
-        height:350px;
-        width: 250px;
-        border-radius: 20px;
-        box-shadow: 8px 6px 10px gray;
-        text-align: center;
-        padding-top: 20px;
-        
-      }
-      .box1{
-          border: 3px solid red;  
-          
-      }
-      .box2{
-        border: 3px solid red;
-        
-      }
-      .box3{
-        border: 3px solid red;
-      }
-      .button{
-        color: red;
-        font-size:35px;
-       
-      }
-      .font1{
-        font-size: 30px;
-       font-family: 'Courier New';
-        color: red;
-      }
-      .font2{
-        font-weight: bold;
-        color: red;
-        text-decoration: line-through;
-      }
-      hr{
-        width: 150px;
-        margin-right: 10px;
-      }
-  .container2{
-      position: absolute;
-      z-index:1;
-  }
-  .box20{
-    position:relative;
-    display: inline-block;
-    margin: 80px;
+hr{
+  width: 150px;
+  margin-right: 10px;
+} 
+
+
+
+
+@media only screen and (max-width:856px){
+  .jio-container{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+   
+  } 
+   .box20{
     height:200px;
     width: 300px;
-    align-content: space-between;
+    margin-top: 30vh;
     background-color: white;
-  }
-  .box21{
-     border: 2px solid red;
-      border-radius: 20px;
-      box-shadow: 8px 6px 10px gray;
-      text-align: center;
-      font-size: 30px;
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 8px 6px 10px gray;
+   text-align: center;
+    font-size: 30px;
     padding-top: 20px;
-    margin-left: 500px;
     color: red;
+   }
+  .main-container{
+  border: 1px;
+  position: absolute;
+  filter: blur(5px);
+  visibility: none;
+  z-index: -1;
+}
+  .item-container{
+  display: grid;
+  grid-template-columns: auto auto;
+   padding:10px;
+   gap:40px;
+   justify-content:center;
+   
   }
-  .button2{
-      background-color: red;
-      color: white;
-      border-radius: 25px;
-     height: 40px;
-      width: 80px;
-      border: 3px solid white;
+  .dummy{
+    display: inline;
+  }
+  .dummy1{
+    display: none;
+  }
+  
+  .item{
+  font-family: 'Courier New';
+  font-size: 40px;
+  }
+  .box-container{
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box{
+  height: 100px;
+  width: 350px;
+  border: 2px solid rgb(214, 171, 171); 
+  border-radius: 20px;
+  box-shadow: 8px 6px 10px gray;
+  padding-top: 10px;
+  margin: 20px;
+  text-align:left;
+  }
+  .button{
+    color: red;
+    font-size:35px;
+  }
+  .font1{
+    font-size: 30px;
+   font-family: none;
+    color:rgb(150, 139, 139);
+  }
+  .font2{ 
+    
+    font-weight: bold;
+    color: red;
+    text-decoration: line-through;
+  }
+  hr{
+    width: 150px;
+    margin-right: 10px;
   } 
 }
+ 
+ 

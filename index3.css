@@ -1,53 +1,102 @@
-.container{
+.main-container{
     border: 3px solid white;
 }
-.item{
-  display: inline-flex;
-  flex-flow: row;
-  font-size: 40px;
-  font-weight:bold ;
-  margin-left: 400px;
+.item-container{
+display:flex;
+flex-direction:column-reverse;
+align-items: center;
+justify-content: center;
 }
-.item1{
-  margin-left: 680px;
+.box-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
-.item2{
-
-margin-top: 20px;
-}
-
 .box{
-  
     height:350px;
-    width: 300px;
-    margin: 100px;
+    width: 280px;
     border-radius: 20px;
     box-shadow: 8px 6px 10px gray;
-    
+    border: 3px solid red;
+    text-align: center;
+    padding-top: 30px;
   }
-  .box1{
-      border: 3px solid red;
-      text-align: center;
-     padding-top: 30px;
-     margin-left: 550px;
-  }
-  .button{
+.button{
     color: red;
     font-size:35px;
+  }
+.item2{
+float: right;
+margin-top:112px;
+margin-right:10px ;
+}
+.font1{
+  font-size: 30px;
+ font-family: 'Courier New';
+  color: red;
+}
+.font2{
+  font-weight: bold;
+  color: red;
+  text-decoration: line-through;
+}
+hr{
+display: inline-block;
+  width: 200px;
+}
+@media only screen and (max-width:856px){
+  .main-container{
+    border: 3px solid white;
+}
+  .dummy{
+    display: none;
+  }
   
+.item-container{
+display:flex;
+flex-direction:row ;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+.box-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.box{
+    height:300px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 8px 6px 10px gray;
+    border: 3px solid red;
+    text-align: center;
+    padding-top: 30px;
   }
-  .font1{
-    font-size: 30px;
-   font-family: 'Courier New';
+.button{
     color: red;
+    font-size:35px;
   }
-  .font2{
-    font-weight: bold;
-    color: red;
-    text-decoration: line-through;
-  }
-  hr{
-    
-    width: 200px;
-    margin-right: 10px;
-  }
+.item2{
+float: right;
+margin-top:60px;
+margin-right:10px ;
+}
+.font1{
+  font-size: 30px;
+ font-family: 'Courier New';
+  color: red;
+}
+.font2{
+  font-weight: bold;
+  color: red;
+  text-decoration: line-through;
+}
+hr{
+display: inline-block;
+  width: 150px;
+}
+
+}
